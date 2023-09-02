@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Gamer</title>
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<header class="bg-primary text-white text-center py-4">
+  <h1>Arma tu PC</h1>
+</header>
+
+<body> 
+  <p class="mx-4 mt-4 alert alert-info">
+    <strong>Bienvenido a PC Gamer.</strong> En nuestro sitio web, podrás elegir los productos gamer que desees comprar. Simplemente agrega los productos a tu carrito de compras. Si deseas obtener más información sobre los productos, no dudes en consultar el botón que dice "Mas Info".
+  </p>  
+  <div>
+    <!-- Productos -->
+    <h2 class="mx-3">Productos</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/macbook-air.webp" class="card-img-top" alt="macbook">
+          <div class="card-body">
+            <h5 class="card-title">MacBook</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="0">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="0">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="0" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 2 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/pc-asus-rog-strix.webp" class="card-img-top" alt="pc-asus">
+          <div class="card-body">
+            <h5 class="card-title">PC Asus</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="1">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="1">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="1" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 3 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/teclado-logitech-g213.webp" class="card-img-top" alt="teclado-logitech">
+          <div class="card-body">
+            <h5 class="card-title">Teclado Logitech</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="2">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="2">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="2" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 4 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/mouse-razer-deathadder-v2-mini.webp" class="card-img-top" alt="mouse-razer">
+          <div class="card-body">
+            <h5 class="card-title">Mouse Razer</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="3">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="3">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="3" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 5 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/moniotr-samsung-oddysey-g55t.webp" class="card-img-top" alt="monitor-samsung">
+          <div class="card-body">
+            <h5 class="card-title">Monitor Samsung</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="4">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="4">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="4" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 6 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/silla-gamer-hyperx-blast-core.webp" class="card-img-top" alt="silla-hyperx">
+          <div class="card-body">
+            <h5 class="card-title">Silla Gamer HyperX</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="5">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="5">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="5" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 7 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/mousepad-logitech-g840.webp" class="card-img-top" alt="mousepad-logitech">
+          <div class="card-body">
+            <h5 class="card-title">Mousepad Logitech</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="6">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="6">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="6" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 8 -->
+      <div class="col-lg-4 col-md-6 my-2">
+        <div class="card">
+          <img src="assets/img/luces-led.webp" class="card-img-top" alt="luces-led">
+          <div class="card-body">
+            <h5 class="card-title">Luces LED</h5>
+            <p class="card-text">Precio: <span class="precio-producto" data-producto-index="7">$x</span></p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary agregar-al-carrito" data-producto-index="7">Agregar al carrito</button>
+            <button type="button" data-action="masInfo" data-producto-index="7" class="btn btn-info">Mas Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="my-4">Carrito de Compras</h2>
+        <div class="border p-3">
+          <h3>Tus productos</h3>
+          <ul id="carrito-lista" class="list-unstyled">
+            <!-- Productos -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3 class="my-4">Precio Total</h3>
+        <p class="h4">$<span id="precio-total">0.00</span></p>
+        <button type="button" class="btn btn-success btn-block mb-2" id="comprar">Comprar</button>
+        <button type="button" id="guardar-carrito" class="btn btn-warning btn-block">Guardar Carrito</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

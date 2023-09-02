@@ -1,0 +1,50 @@
+[
+  {
+    "objeto": "Laptop",
+    "marca": "Apple",
+    "precio": 1000000,
+    "stock": 6
+  },
+  {
+    "objeto": "PC",
+    "marca": "Asus",
+    "precio": 750000,
+    "stock": 10
+  },
+  {
+    "objeto": "Teclado",
+    "marca": "Logitech",
+    "precio": 20000,
+    "stock": 3
+  },
+  {
+    "objeto": "Mouse",
+    "marca": "Razer",
+    "precio": 15000,
+    "stock": 9
+  },
+  {
+    "objeto": "Mousepad",
+    "marca": "Logitech",
+    "precio": 5000,
+    "stock": 5
+  },
+  {
+    "objeto": "Monitor",
+    "marca": "Samsung",
+    "precio": 200000,
+    "stock": 3
+  },
+  {
+    "objeto": "Silla",
+    "marca": "Hyperx",
+    "precio": 150000,
+    "stock": 7
+  },
+  {
+    "objeto": "Luces LED",
+    "marca": "ERCO",
+    "precio": 5000,
+    "stock": 13
+  }
+]
